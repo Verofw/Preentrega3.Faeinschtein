@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Big+Shoulders+Display:wght@700&family=Roboto&family=Roboto+Mono:wght@100&display=swap");
+
+@font-face {
+  font-family: outlined;
+  src: url(./assets/fonts/horizon_outlined.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.barra {
+  background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.menuHamburguesa {
+  margin: 30px;
+}
+
+.logo {
+  font-size: 4rem;
+  padding: 0px 50px;
+  text-shadow: 3px 3px 25px white;
+  font-family: "Big Shoulders Display", cursive;
+  transform: scale(1.03);
+  transition: 0.9s;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+  transition: 0.9s;
+  text-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
+}
+
+.menu {
+  background-color: rgb(140, 154, 114);
+}
+
+.navegacion {
+  justify-content: space-between;
+}
+
+.items {
+  width: 65%;
+  justify-content: space-evenly;
+  margin-right: 30px;
+}
+
+.items .btn {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.textoMenu {
+  color: white;
+}
+
+.textoMenu:hover {
+  color: #cbb538;
+  text-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
+}
+
+.cajaBusqueda {
+  justify-content: center;
+}
+
+.buscar:hover {
+  transform: scale(1.03);
+  transition: 0.9s;
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
+}
+
+.carrito {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#contenedorTabla {
+  z-index: 1000;
+}
+
+#carritoLista {
+  display: none;
+  /* Oculto por defecto */
+  position: absolute;
+  top: 100%;
+  color: #f5fcff;
+  font-family: "Roboto", sans-serif;
+  right: 0;
+  background-color: rgb(95, 90, 90);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.fondo {
+  background-image: url(./img/Mesa\ de\ trabajo\ 2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 0px;
+}
+
+.laFabrica {
+  text-align: center;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #a1a1a1;
+}
+
+.sustos {
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 10rem;
+  color: white;
+  letter-spacing: 8px;
+  text-shadow: 0 0 70px #a1a1a1;
+  margin-bottom: 1rem;
+}
+
+.grow {
+  max-width: 100%;
+  margin: -20% 0 0 30%;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.grow:hover {
+  transform: scale3d(1.1, 1.1, 0.3);
+  -webkit-transform: scale3d(1.1, 1.1, 0.3);
+  -moz-transform: scale3d(1.1, 1.1, 0.3);
+}
+
+.titulosSecciones {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 5rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+}
+.card {
+  background-color: rgba(212, 185, 185, 0.1843137255);
+  margin: 20px;
+}
+
+.card h5 {
+  color: white;
+}
+
+.card p {
+  color: white;
+}
+
+#dropdown {
+  background-color: white;
+  display: none;
+}
+
+footer {
+  background: #232526;
+  background: linear-gradient(to right, #414345, #232526);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 3.5rem;
+  padding: 15px 40px;
+}
+
+.redes a:hover {
+  opacity: 50%;
+}
+
+.rights {
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+  justify-content: center;
+  margin: 0;
+}
+
+.subir {
+  height: 70px;
+  width: 70px;
+  background-color: darkgray;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 32px;
+  line-height: 70px;
+  border-radius: 48px;
+}
+
+.subir a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.subir a:hover {
+  opacity: 50%;
+}
+
+.subir:hover {
+  background-color: #cbb538;
+}
+
+@media only screen and (max-width: 576px) {
+  .cajaBusqueda {
+    width: 50%;
+    flex-flow: nowrap;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .logo {
+    font-size: 4rem;
+    padding: 25px;
+  }
+
+  .cajaBusqueda {
+    width: 80%;
+  }
+
+  .bienvenidos {
+    font-size: 2rem;
+  }
+
+  .textoBienvenida {
+    font-size: 1rem;
+  }
+
+  .laFabrica {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .sustos {
+    font-size: 7rem;
+  }
+
+  .redes a {
+    font-size: 3rem;
+  }
+
+  .rights {
+    font-size: 0.8rem;
+  }
+
+  .subir {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .subir a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .fondo {
+    padding: 10px 0;
+  }
+
+  .laFabrica {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .sustos {
+    font-size: 5rem;
+  }
+
+  .banner {
+    max-width: 100%;
+    margin: -20% 0 0 0;
+    padding-bottom: 20%;
+  }
+
+  footer {
+    width: 100%;
+    height: 8rem;
+  }
+
+  .redes a {
+    font-size: 2rem;
+  }
+
+  .rights {
+    font-size: 0.8rem;
+  }
+}

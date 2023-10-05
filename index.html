@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="cine, terror, sustos, fabrica de sustos, youtube, canal de youtube">
+    <meta name="descripcion" content="Bienvenidos a La Fábrica de Sustos, nuestro pequeño espacio de terror👻">
+    <meta name="author" content="Verónica Faeinschtein">
+    <meta name="country" content="argentina">
+    <meta name="distribution" content="global">
+    <meta name="doc-type" content="web page">
+    <title>La Fabrica de Sustos │ Shop</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.31/sweetalert2.css">
+    <link rel="stylesheet" href="./librerias css/wickedcss.min.css">
+    <link rel="stylesheet" href="./estilos.css" />
+</head>
+
+<body>
+    <header id="barra">
+        <nav class="barra navbar navbar-expand-lg navbar-dark">
+            <a class="logo navbar-brand text-light" href="#">FdS</a>
+            <button class="navbar-toggler menu menuHamburguesa" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navegacion collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="items navbar-nav mr-auto">
+                    <li class="nav-item btn">
+                        <a class="textoMenu text-decoration-none" href="#indumentaria">Indumentaria</a>
+                    </li>
+                    <li class="nav-item btn">
+                        <a class="textoMenu text-decoration-none" href="#hogar">Hogar</a>
+                    </li>
+                    <li class="nav-item btn">
+                        <a class="textoMenu text-decoration-none" href="#posters">Gráficas</a>
+                    </li>
+                </ul>
+                <input type="text" id="busquedaInput" placeholder="Buscar productos...">
+                <button id="buscarBoton" class="btn btn-light ml-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        <div id="carritoIcon">
+            <div class="btn btn-light mr-2 ml-2"><i class="fa-solid fa-cart-shopping "></i></div>
+            <div class="container-fluid d-flex justify-content-center" id="contenedorTabla">
+                <table class="table col-6" id="carritoLista">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="bodyTabla">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            </div>
+        </nav>
+    </header>
+    <main class="fondo">
+        <div class="jumbotron fondo">
+            <p class="display-3 laFabrica">La fábrica de</p>
+            <p class="display-1 sustos">SUSTOS</p>
+
+            <img src="./img/SHOP.png" class="img-fluid grow" alt="..." />
+        </div>
+        </div>
+        <br>
+        <div id="resultadosContainer" class="container d-flex justify-content-center contenedorID">
+            
+        </div>
+
+        <section id="compras"><!-- COMIENZA LA SECCION COMPRAS -->
+            <!-- SECCION INDUMENTARIA -->
+            <section>
+                <h2 class="titulosSecciones d-flex" id="indumentaria">INDUMENTARIA</h2>
+                <div class="container d-flex justify-content-center containerRemeras contenedorID">
+
+                </div>
+                <div class="container d-flex justify-content-center containerBuzos contenedorID">
+                </div>
+            </section>
+            <br>
+            <section>
+                <h2 class="titulosSecciones d-flex" id="hogar">HOGAR</h2>
+                <div class="container d-flex justify-content-center containerTazas contenedorID">
+                </div>
+                </div>
+            </section>
+            </div>
+            <section>
+                <h2 class="titulosSecciones d-flex" id="posters">GRÁFICAS</h2>
+                <div class="container d-flex justify-content-center containerPosters contenedorID">
+                </div>
+
+                <div class="container d-flex justify-content-center containerStickers contenedorID">
+                </div>
+            </section>
+        </section>
+        <div class="subir">
+            <a href="#barra"> <i class="fa-solid fa-chevron-up"></i> </a>
+        </div>
+        <footer>
+            <div class="redes" data-aos="zoom-in">
+                <a href="https://www.instagram.com/lafabricadesustos/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCGn9CQUmYFKawStxPUEflWw" target="_blank">
+                    <i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <h2 class="rights">All Rights Reserved ®</h2>
+        </footer>
+    </main>
+    <!-- JS AGREGADOS EXTERNOS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.31/sweetalert2.min.js></script>
+    <!-- JS PROPIO -->
+    <script src="./Js/constructor.js"></script>;
+    <script src="./Js/productos.js"></script>;
+    <script src="./Js/item.js"></script>;
+    <script src="./Js/mostrarproductos.js"></script>;
+    <script src="./Js/buscador.js"></script>
+    <script src="Js/listacarrito.js"></script>;
+    <script src="Js/carrito.js"></script>;
+
+
+</body>
+
+</html>
