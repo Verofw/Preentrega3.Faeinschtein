@@ -1,13 +1,13 @@
-    const containerRemeras = document.querySelector('.containerRemeras');
-    const containerBuzos = document.querySelector ('.containerBuzos');
-    const containerTazas = document.querySelector ('.containerTazas');
-    const containerPosters = document.querySelector ('.containerPosters');
-    const containerStickers = document.querySelector ('.containerStickers');
-    
-    
+const containerRemeras = document.querySelector('.containerRemeras');
+const containerBuzos = document.querySelector('.containerBuzos');
+const containerTazas = document.querySelector('.containerTazas');
+const containerPosters = document.querySelector('.containerPosters');
+const containerStickers = document.querySelector('.containerStickers');
+
+
 function mostrarProductos(productos, condicion, contenedor) {
     contenedor.innerHTML = '';
-    
+
     productos.forEach((producto) => {
         if (condicion(producto)) {
             const tarjeta = document.createElement('div');
@@ -29,26 +29,26 @@ function mostrarProductos(productos, condicion, contenedor) {
     });
 }
 
-// Llamar a la función para mostrar productos con la condición especificada
+// Llamo a la función para mostrar productos con la condición especificada
 mostrarProductos(productos, nombreRemera, containerRemeras);
-mostrarProductos (productos, nombreBuzo, containerBuzos);
-mostrarProductos (productos, nombreTaza, containerTazas);
-mostrarProductos (productos, nombrePoster, containerPosters);
-mostrarProductos (productos, nombreSticker, containerStickers);
+mostrarProductos(productos, nombreBuzo, containerBuzos);
+mostrarProductos(productos, nombreTaza, containerTazas);
+mostrarProductos(productos, nombrePoster, containerPosters);
+mostrarProductos(productos, nombreSticker, containerStickers);
 
 
 function nombreRemera(producto) {
     return producto.nombre.toLowerCase().includes('remera');
 }
-function nombreBuzo (producto){
-    return producto.nombre.toLowerCase().includes ('buzo');
+function nombreBuzo(producto) {
+    return producto.nombre.toLowerCase().includes('buzo');
 }
-function nombreTaza (producto){
-    return producto.nombre.toLowerCase().includes ('taza');
+function nombreTaza(producto) {
+    return producto.nombre.toLowerCase().includes('taza');
 }
-function nombrePoster (producto){
-    return producto.nombre.toLowerCase().includes ('poster');
+function nombrePoster(producto) {
+    return producto.nombre.toLowerCase().includes('poster');
 }
-function nombreSticker (producto){
-    return producto.nombre.toLowerCase().includes ('sticker');
+function nombreSticker(producto) {
+    return producto.nombre.toLowerCase().includes('sticker');
 }

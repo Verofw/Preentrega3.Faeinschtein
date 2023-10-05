@@ -161,9 +161,10 @@ html {
   justify-content: center;
 }
 
-.container{
+.container {
   width: 100%;
 }
+
 .card {
   background-color: rgba(212, 185, 185, 0.1843137255);
   margin: 20px;

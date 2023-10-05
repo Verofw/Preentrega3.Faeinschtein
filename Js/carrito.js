@@ -1,5 +1,5 @@
 
-// funcion para saber si el localStorage tiene data y prevenir error SyntaxError: JSON.parse
+// agregue esta funcion para saber si el localStorage tiene data y prevenir error SyntaxError: JSON.parse con el que me inicia en consola
 function traerItemsStorage() {
     const carritoData = localStorage.getItem('carrito');
     if (carritoData) {
@@ -47,7 +47,6 @@ btnAgregar.forEach((btn, index) => {
             duration: 3000,
             gravity: 'bottom',
             position: 'center',
-            background: 'linear-gradient (to left, #00000, #C0C0C0)',
         }).showToast();
 
         localStorage.setItem('carrito', JSON.stringify(carrito));

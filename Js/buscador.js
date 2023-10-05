@@ -29,10 +29,9 @@ function buscarProductos(consulta) {
     });
 }
 
-
 function mostrarResultados(resultados) {
     const resultadosContainer = document.getElementById("resultadosContainer");
-    resultadosContainer.innerHTML = ""; // Limpiar resultados anteriores
+    resultadosContainer.innerHTML = ""; 
 
     if (resultados.length === 0) {
         const h5 = document.createElement("h5");
@@ -52,7 +51,7 @@ function mostrarResultados(resultados) {
             </div>`;
             resultadosContainer.appendChild(card);
 
-            // Agregar el evento click al botón "Agregar al carrito despues de filtrar"
+            // Agrego el evento click al botón Agregar al carrito despues de filtrar, porque no me toma la class carritoPush
             const agregarAlCarritoButton = card.querySelector('.carritoPush');
             agregarAlCarritoButton.addEventListener('click', () => {
                 const productoSeleccionado = producto;
