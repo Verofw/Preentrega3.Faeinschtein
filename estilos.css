@@ -122,7 +122,7 @@ html {
   text-align: center;
   font-family: "Anonymous Pro", monospace;
   font-size: 2rem;
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -145,6 +145,8 @@ html {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
   -moz-transition: 0.5s, color 0.1s;
+  margin-top: -12%;
+  margin-left: 40%;
 }
 
 .grow:hover {
